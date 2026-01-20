@@ -1,0 +1,532 @@
+@font-face {
+  font-family: HurmitRegular;
+  src: url(fonts/hurmit/HurmitNerdFont-Regular.otf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: HurmitBold;
+  src: url(fonts/hurmit/HurmitNerdFont-Bold.otf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: HurmitLight;
+  src: url(fonts/hurmit/HurmitNerdFont-Light.otf);
+  font-weight: thin;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: #161616;   
+}
+
+body {
+    margin: 0;
+    margin-top: 5.6em;
+    background-color: #161616;
+    background-image: linear-gradient(to bottom right, rgb(20, 28, 51), rgb(40, 20, 45));
+    min-height: 100vh;
+    width: 100vw;
+    height: 100% !important;
+
+}
+
+.navbar {
+    font-family: HurmitLight;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0% 12%;
+    overflow: hidden;
+    background-color: #161616;    
+    height: 5.6em;
+
+    position:fixed;
+    top: 0;
+    z-index: 1030;
+    width:100%;
+
+}
+
+.navbar-name {
+    font-family: HurmitBold;
+    font-size: 32px;
+    margin-top: 12px;
+    width: 60%;
+    color:rgb(230, 230, 230);
+
+}
+
+.navbar-name a{
+    color: rgb(230, 230, 230);
+    text-decoration: none;
+}
+
+.navbar-title{
+    font-family: HurmitLight;
+    font-size: 24px;
+}
+
+.navbar-links {
+    padding-top: 12px;
+    width:40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar-links li {
+    font-size: 21px;
+    float: left;
+    height: 100%;
+}
+
+.navbar-links img{
+    height: 1.8em;
+}
+
+.navbar-links li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 8px 14px;
+    text-decoration: none;
+    height: 100%;
+}
+
+.navbar-links li a:hover {
+  background-color: #111111;
+}
+
+#resume-button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(230, 230, 230);
+    padding: 0px 12px;
+    border-radius: 12px;
+    margin-bottom: 6px;
+    height: 100%;
+    min-height: 2em;
+}
+
+#resume-button span{
+    font-size: 24px;
+    color: #161616;
+}
+
+#resume-button img{
+    height: 1.2em;
+}
+
+/* */
+/* */
+/* */
+
+main {
+    padding: 48px;
+    /*background-color: white;*/
+    color:rgb(230, 230, 230);
+    min-height: inherit;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.flashcard {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+
+    width: 72em;
+    padding: 0 auto;
+
+    margin-top: 2em;
+    margin-bottom: 6em;
+
+}
+
+.flashcard img{
+    
+    width: 16%;
+
+
+    border-radius: 50%;
+    background: transparent;
+    align-self: center;
+
+
+    padding: 8px;
+
+}
+
+
+.flashcard div{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+
+    width: 84%;
+    font-size: 24px;
+
+    padding: 8px;
+    padding-left: 28px;
+}
+
+.flashcard div p{
+    width: 100%;
+}
+
+.flashcard .flashcard-greeting{
+    font-family: HurmitBold;
+    font-size: 34px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    margin: 0px;
+    margin-bottom: 8px;
+}
+
+.flashcard .flashcard-greeting span{
+    align-self: flex-end;
+}
+
+.flashcard-description{
+    font-family: HurmitLight;
+    margin: 0;
+}
+
+.flashcard-pronouns{
+    font-size: 16px;
+    margin-left: 8px;
+    margin-bottom: 6.2px;
+}
+
+/* */
+/* */
+/* */
+
+.portfolio-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 78em;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 2em;
+
+    font-family: HurmitLight;
+    font-size: 24px;
+
+}
+
+.about-text {
+    font-family: HurmitLight;
+    font-size: 20px;
+    width: 56em;
+    align-self: center;
+    margin-bottom: 0.8em;
+}
+
+.about-text bold{
+    color:white;
+    font-family: HurmitBold;
+}
+
+
+.section-title {
+    font-family: HurmitBold;
+    font-size: 32px;
+    margin: 0;
+    margin-bottom: 0.8em;
+    margin-left: 12%;
+    width: 26%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+    padding: 12px;
+    padding-left: 16px;
+    border-radius: 12px;
+}
+
+
+.showcase {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto; 
+}
+
+.showcase-entry{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    width: 24em;
+    height: 17em;
+    background-color: #666666;
+    border-radius: 16px;
+
+    margin: 0 0.8em 1.6em 0.8em;
+    align-self: flex-start;
+
+    overflow: hidden;
+}
+
+.showcase-entry-body {
+    height: 11em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.showcase-entry-body-image {
+    width: 17em;
+
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    overflow:hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.showcase-entry-body-image p {
+    font-family: HurmitBold;
+    font-size: 24px;
+    margin: 12px;
+    background-color:rgba(0, 0, 0, 0.7);
+    width:auto;
+    padding: 6px 18px;
+    padding-bottom: 2px;
+    border-radius: 12px;
+
+}
+
+.showcase-entry-body-info {
+    width: 7em;
+    background-color: #161616;
+
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 12px;
+}
+
+.info-bubble-container{
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.info-bubble {
+    font-family: HurmitLight;
+    font-size: 18px;
+    border-style: solid;
+    border-width: 1.6px;
+    border-radius: 24px;
+    margin: 6px;
+    padding: 3px 12px;
+}
+
+.info-bubble bold{
+    font-family: HurmitBold;
+}
+
+.entry-link{
+    background-color: #444444;
+    padding: 4px 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    
+    color: rgb(230, 230, 230);
+    text-decoration: none;
+    border-radius: 12px;
+}
+
+
+.entry-link img{
+    height: 0.8em;
+    margin-left: 8px;
+}
+
+.entry-link p{
+    margin: 0;
+    font-size: 21px;
+}
+
+.color-teal{
+    color:rgb(152, 253, 240);
+}
+
+.color-garnet{
+    color:rgb(220, 108, 96)
+}
+
+.color-magenta{
+    color:rgb(236, 139, 182)
+}
+
+.color-blue {
+    color: rgb(127, 192, 246);
+}
+
+.color-dark-blue {
+    color: rgb(103, 120, 244);
+}
+
+.showcase-entry-footer {
+    height: 6em;
+    padding: 12px;
+    background-color:#282828;
+
+}
+
+.educations {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto; 
+}
+
+.education-entry {
+    width: 24em;
+    min-height: 5.2em;
+    background-color: #282828;
+    border-radius: 16px;
+
+    margin: 0 0.8em 1.6em 0.8em;
+    align-self: flex-start;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 16px;
+}
+
+
+
+.education-entry-title {
+    font-family: HurmitBold;
+    font-size: 26px;
+    margin-bottom: 2px;
+
+}
+
+.education-entry-title span{
+   font-family: HurmitLight;
+    font-size: 26px;
+}
+
+.boxed-text {
+    font-family: HurmitLight;
+    font-size: 16px;
+    margin: 0px 6px;
+}
+
+.boxed-text bold{
+    font-family: HurmitBold;
+    color:white;
+}
+
+.education-spacer{
+    width: 24em;
+    max-height:0;
+    margin: 0 0.8em 0 0.8em;
+}
+
+.hobbies{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto; 
+}
+
+
+.hobbies-entry{
+    width: 24em;
+    height: 12em;
+    background-color: #282828;
+
+    border-radius: 16px;
+
+    margin: 0 0.8em 1.6em 0.8em;
+    align-self: flex-start;
+    overflow: hidden;
+
+    display: flex;
+}
+
+.hobbies-entry img{
+    height: 100%;
+}
+
+.hobbies-entry h3{
+    padding: 16px;
+    padding-bottom: 8px;
+    font-family: HurmitBold;
+    font-size: 21px;
+    margin: 0px;
+
+}
+
+.hobbies-entry p{
+    font-family: HurmitLight;
+    font-size: 16px;
+    padding: 0px 18px;
+
+    margin: 0px 6px;
+    margin-bottom: 7px;
+}
+
+.hobbies-entry p bold{
+    font-family: HurmitBold;
+    color: white;
+}
+
+/* */
+/* */
+/* */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+
+    margin: 0;
+    padding: 0 2%;
+    min-height: 4em;
+    background-color: #161616;
+}
+
+footer p{
+    font-size: 12px;
+    margin: 0;
+    color:lightgrey;
+}
